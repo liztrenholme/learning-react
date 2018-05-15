@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const list = [{
+const list = [{ // 
                 name: "Houdini",
                 type: "hedgehog",
                 age: 5,
@@ -19,9 +19,9 @@ const list = [{
         ];
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+    constructor(props) { //defining initial state
+        super(props); // <-must always call super! props brings in props in case you want to use it later.
+        this.state = { // binds the state to the class
           list: list,
         };
     }
@@ -36,7 +36,7 @@ class App extends Component {
             </header> 
             <p className = "App-intro">
             Woohoo! This is reactive!
-            {this.state.list.map(item =>
+            {this.state.list.map(item => // here we are using and accessing the state
               <div key={item.id}>
               <span> {item.name} </span> <br/>
               <span> {item.type} </span> <br/>
