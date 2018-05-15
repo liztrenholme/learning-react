@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
 	<App />, document.getElementById('root')
 	);
-if (module.hot) {
+if (module.hot) { //this makes the content refresh without reloading the whole page
 	module.hot.accept();
 }
 registerServiceWorker();
