@@ -33,8 +33,8 @@ class App extends Component {
     render() {
         const hola = "This is inside of a variable, which can be called to be put on the page at any time.";
         return ( 
-            
             <div className="App">
+            <h1> { hola } </h1>
             <header className="App-header" >
             <img src= { logo } className="App-logo"alt="logo"/>
             <h1 className="App-title"> Practicing with React.js!</h1> 
@@ -52,7 +52,7 @@ class App extends Component {
               )}
             <h4> { hola } </h4> </p> 
             </div>
-              // Import result is the URL of your image
+            
         
 
         );
