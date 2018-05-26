@@ -52,7 +52,7 @@ class App extends Component {
               )}
               <br /> <br /> /* this is dynamic data, but it MUST be kept to one line within the 
               curly braces. also, notice how this comment shows up on the page... this is happening because 
-              it is within the render() function, because it's literally rendering everything inside of it!*/
+              it is within the return() of render() function, because it's literally rendering everything inside of it!*/
 
               Look at how cool this is:
               { 2+2 } 
