@@ -50,6 +50,9 @@ class App extends Component {
               <span> {item.pattern} </span> <br/>
               </div>
               )}
+              <br /> <br />
+              Look at how cool this is:
+              { 2+2 } //this is dynamic data, but it MUST be kept to one line within the curly braces.
             <h4> { hola } </h4> </p> 
             </div>
             
