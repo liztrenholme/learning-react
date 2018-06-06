@@ -5,6 +5,7 @@ import './App.css';
 const banonna = 'https://avatars2.githubusercontent.com/u/32151271?s=460&v=4'; // Tell Webpack this JS file uses this image
 
 
+const funFact = "React is SO much easier to work with in VS Code.  Sublime gets confused and the colors are rendered weirdly."
 
 const list = [{ // 
                 name: "Houdini",
@@ -50,13 +51,15 @@ class App extends Component {
               <span> {item.pattern} </span> <br/>
               </div>
               )}
-              <br /> <br /> /* this is dynamic data, but it MUST be kept to one line within the 
+              <br /> <br />  /* this is dynamic data, but it MUST be kept to one line within the 
               curly braces. also, notice how this comment shows up on the page... this is happening because 
-              it is within the return() of render() function, because it's literally rendering everything inside of it!*/
+              it is within the return() of render() function, because it's literally rendering everything inside of it!*/  
+              BUT, you can comment out things by putting them into curly braces, like this comment (that you can't see): { /* woo */}
 
               Look at how cool this is:
               { 2+2 } 
             <h4> { hola } </h4> </p> 
+            <p> { funFact } </p>
             </div>
             
         
